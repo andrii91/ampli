@@ -1,0 +1,37 @@
+@import '../../mq';
+
+@media #{$tabletPortrait} {
+  @import '../mobile';
+
+  & {
+    .container {
+      max-width: 560px;
+    }
+
+    .footer .container {
+      max-width: 400px;
+    }
+
+    .included-svg {
+      height: inherit;
+      overflow: inherit;
+
+      svg {
+
+        transform: scale(.8) translate(-8%, 0);
+
+      }
+
+    }
+
+    .included-item .right {
+      margin-top: 0;
+    }
+
+    .skills-item.advanced .skills-box .item:nth-child(2) .box-item {
+      padding-left: 5px;
+      padding-right: 5px;
+      max-width: 245px;
+    }
+  }
+}
