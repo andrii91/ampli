@@ -799,6 +799,10 @@ nav {
   background-color: #ffffff;
   padding: 0;
   overflow: hidden;
+  &.large {
+    padding: 2vw;
+    max-width: 768px;
+  }
 
   img {
     max-width: 100%;
